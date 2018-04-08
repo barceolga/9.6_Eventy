@@ -8,7 +8,7 @@ var add = document.getElementById('addElem');
     for (i=0; i < listLength; i++) {
       element.innerHTML = "item " + listLength;
 
-      if (listLength == 10) {
+      if (i == 9) {
         alert("We've already got enough new items, it's time to stop!");
         break;
       }
@@ -17,5 +17,4 @@ var add = document.getElementById('addElem');
     list.appendChild(element);
  }
 
-checkOnclickEvent();
 add.addEventListener('click', checkOnclickEvent);
