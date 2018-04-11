@@ -8,8 +8,9 @@ var add = document.getElementById('addElem');
     console.log(listLength);
       element.innerHTML = "item " + listLength;
 
-      if (listLength == 9) {
+      if (listLength >= 9) {
         alert("We've already got enough new items, it's time to stop!");
+        return;
       }
     console.log(element);
     list.appendChild(element);
@@ -18,22 +19,4 @@ var add = document.getElementById('addElem');
 add.addEventListener('click', checkOnclickEvent);
 
 
-   /*function checkOnclickEvent1() {
-    var element1 = document.createElement('li');
-    var listLength1 = list.getElementsByTagName('li').length;
-    console.log(listLength1);
-    var i = 0;
-    while (i < listLength1) {
-      element1.innerHTML = "item " + listLength1;
-      i++;
-
-      if (i == 9) {
-        alert("We've already got enough new items, it's time to stop!");
-        break;
-      }
-    }
-    console.log(element1);
-    list.appendChild(element1);
- }
-
-add.addEventListener('click', checkOnclickEvent1);*/
+   
